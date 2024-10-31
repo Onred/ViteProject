@@ -1,0 +1,28 @@
+.sidebar-container {
+    background-color: #444;
+    color: white;
+    width: 300px;
+    padding-top: 1em;
+}
+
+.sidebar-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 3em;
+    
+    
+}
+
+.sidebar-container li {
+    padding: 1em 0
+}
+
+.sidebar-container a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1em;
+}
+
+.sidebar-container a:hover {
+    text-decoration: underline;
+}

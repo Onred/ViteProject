@@ -1,0 +1,13 @@
+.header-container {
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    height: 100%;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1em;
+}

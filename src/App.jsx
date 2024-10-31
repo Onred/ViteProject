@@ -1,19 +1,27 @@
-import { useState } from 'react'
 import './App.css'
-import Counter from './components/Counter'
-import Button from './components/Button';
+import Body from './components/Body'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
 
 function App() {
-  const [buttonTheme, setButtonTheme] = useState("dark-btn");
 
   return (
     <>
-    <Button buttonText="Click Me!" buttonTheme={buttonTheme} />
-
-    <button type="button" onClick={() => buttonTheme === "dark-btn" ? setButtonTheme("light-btn") : setButtonTheme("dark-btn")}>
-      Toggle Other Buttons
-    </button>
-    <Counter />
+    <div className="app-grid">
+      <div className="header-area">
+        <Header/>
+      </div>
+      <div className="sidebar-area">
+        <Sidebar/>
+      </div>
+      <div className="body-area">
+        <Body/>
+      </div>
+      <div className="footer-area">
+        <Footer/>
+      </div>
+    </div>
     </>
   )
 }

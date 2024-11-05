@@ -6,7 +6,7 @@ export default function Body() {
   return (
     <>
     <div className="body-container">
-      <Square/>
+      <Square color="red" size="small" />
       <Square/>
       <Square/>
       <Square/>

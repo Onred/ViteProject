@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Sidebar.css'
-import { FaYoutube, FaGoogle } from 'react-icons/fa';
-import { FaHouse } from 'react-icons/fa6';
+import { FaGoogle, FaHouse, FaYoutube } from 'react-icons/fa6';
 
 export default function Sidebar() {
   const sample_sidebar_data = [
@@ -21,7 +20,7 @@ export default function Sidebar() {
       icon: <FaGoogle/>
     }
   ]
-
+  
   // let list_items = []
   // for (let sidebar_link of sample_sidebar_data) {
   //   list_items.push(
@@ -32,7 +31,7 @@ export default function Sidebar() {
   //     </li>
   //   )
   // }
-  const list_items = sample_sidebar_data.map((sidebar_link) =>
+  const list_of_li_elements = sample_sidebar_data.map((sidebar_link) =>
     <li>
       {sidebar_link.icon}
       <a href={sidebar_link.url}>
@@ -44,7 +43,7 @@ export default function Sidebar() {
 
   return (
     <div className='sidebar-container'>
-      <ul>{list_items}</ul>
+      <ul>{list_of_li_elements}</ul>
     </div>
   )
 }

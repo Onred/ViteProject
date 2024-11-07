@@ -3,9 +3,11 @@ import React from 'react'
 export default function Square(props) {
   const color_options = {
     red: "#f38ba8",
+    orange: "#fab387",
+    yellow: "#f9e2af",
     green: "#a6e3a1",
     blue: "#89b4fa",
-    yellow: "#f9e2af"
+    purple: "#cba6f7"
   }
 
   const size_options = {
@@ -38,6 +40,6 @@ export default function Square(props) {
   return (
     <>
       <div style={square_style}>{props.text}</div>
-    </>  
+    </>
   )
 }

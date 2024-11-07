@@ -5,11 +5,6 @@ import { FaGoogle, FaHouse, FaYoutube } from 'react-icons/fa6';
 export default function Sidebar() {
   const sample_sidebar_data = [
     {
-      text: "YouTube",
-      url: "https://www.youtube.com",
-      icon: <FaYoutube/>
-    },
-    {
       text: "Persevere Homepage",
       url: "https://perseverenow.org",
       icon: <FaHouse/>
@@ -18,6 +13,11 @@ export default function Sidebar() {
       text: "Google Search",
       url: "https://google.com",
       icon: <FaGoogle/>
+    },
+    {
+      text: "YouTube",
+      url: "https://www.youtube.com",
+      icon: <FaYoutube/>
     }
   ]
   
@@ -32,7 +32,7 @@ export default function Sidebar() {
   //   )
   // }
   const list_of_li_elements = sample_sidebar_data.map((sidebar_link) =>
-    <li>
+    <li key={sidebar_link.text + "-" + sidebar_link.url}>
       {sidebar_link.icon}
       <a href={sidebar_link.url}>
         {sidebar_link.text}

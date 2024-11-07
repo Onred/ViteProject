@@ -1,24 +1,22 @@
 .app-grid {
     display: grid;
-    grid-template-areas: 'header header' 'sidebar body' 'footer footer';
+    grid-template-columns: 300px 1fr;
 }
 
 .header-area {
-    grid-area: header;
+    grid-column: span 2;
     min-height: 150px;
 }
 
 .sidebar-area {
-    grid-area: sidebar;
     min-height: calc(100vh - 200px);
 }
 
 .body-area {
-    grid-area: body;
     min-height: calc(100vh - 200px);
 }
 
 .footer-area {
-    grid-area: footer;
+    grid-column: span 2;
     height: 50px;
 }
